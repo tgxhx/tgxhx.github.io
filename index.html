@@ -198,7 +198,7 @@
         <div class="collapse navbar-collapse" id="navbar-list">
             <ul class="nav navbar-nav">
                 <li><a href="./">主页</a></li>
-                <li><a href="./demo/pro/2/" target="_blank">记事本</a></li>
+                <li><a href="./demo/pro/2/" target="_blank">备忘录</a></li>
                 <li><a href="./demo/pro/1/" target="_blank">响应式</a></li>
                 <li><a href="./demo/pro/3/" target="_blank">时间轴</a></li>
                 <!--<li class="dropdown">
@@ -226,7 +226,7 @@
     </div>
 </nav>
 
-<div class="carousel slide" data-ride="" id="carousel-1">
+<div class="carousel slide" data-ride="carousel" id="carousel-1">
     <ol class="carousel-indicators">
         <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-1" data-slide-to="1"></li>
@@ -437,6 +437,9 @@
             $("#tab-list a[href='" + href + "']").collapse("show");
 //            $("#accordion a[href = '"+ href+"']").collapse('show');
         });
+        $('.carousel').carousel({
+            interval: 3000
+        })
     });
 </script>
 </body>
