@@ -74,7 +74,11 @@
         }
       }
       window.onblur = this.stop.bind(this)
-      window.onfocus = this.play.bind(this)
+      window.onfocus = function () {
+        if (_this.options.auto) {
+          _this.play()
+        }
+      }
 
       for (var i = 0; i < this.buttons.length; i++) {
         (function (i) {
